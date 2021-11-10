@@ -1,10 +1,12 @@
 # podcast-adblocker
+Archiving for now because it probably will not work. Might implement conceptually later.
 
 ## The plan
-1. Setup rss client using something like https://www.npmjs.com/package/rss-parser
-2. See if https://github.com/adblockradio/adblockradio works off the shelf
+1. Setup rss client using something like https://www.npmjs.com/package/rss-parser - works
+2. See if https://github.com/adblockradio/adblockradio works off the shelf - does not work: tensorflow and keras versions are not specified and out of date
 3. Reserve using something like https://www.npmjs.com/package/rss-generator or just vanilla https://www.npmjs.com/package/xml-js library
-4. Add endpoints/frontend to subscribe and unsubscribe from feeds
+4. Add endpoints/frontend to proxy feeds
+5. Add endpoints to serve and cache adblocked files
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
