@@ -1,12 +1,17 @@
 # podcast-adblocker
-Archiving for now because it probably will not work. Might implement conceptually later.
+
+Note: does not work. Radioadblock is archived and all models are deleted. Even if they weren't its possible that it wouldn't work anyways - it seems to take a per radio classification approach, whereas for podcasts something like a measure of how "unusual" a particular segment is would probably work better.
+
+For now, I'll just implement this conceptually and if I get around to playing around with ML I might try to make it myself.
 
 ## The plan
 1. Setup rss client using something like https://www.npmjs.com/package/rss-parser - works
-2. See if https://github.com/adblockradio/adblockradio works off the shelf - does not work: tensorflow and keras versions are not specified and out of date
+2. See if https://github.com/adblockradio/adblockradio works off the shelf - does not work
 3. Reserve using something like https://www.npmjs.com/package/rss-generator or just vanilla https://www.npmjs.com/package/xml-js library
 4. Add endpoints/frontend to proxy feeds
 5. Add endpoints to serve and cache adblocked files
+6. Add cronjob to delete old files
+7. Add basic auth
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
