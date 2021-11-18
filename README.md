@@ -11,7 +11,7 @@ For now, I'll just implement this conceptually and if I get around to playing ar
 4. Add endpoints/frontend to proxy feeds
 5. Add endpoints to serve and cache adblocked files
 6. Add cronjob to delete old files
-7. Add basic auth
+7. Add basic auth - done
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>

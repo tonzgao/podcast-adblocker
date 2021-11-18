@@ -4,6 +4,6 @@ import { RssService } from './rss.service';
 @Module({
   imports: [],
   providers: [RssService],
-  exports: [RssService]
+  exports: [RssService],
 })
 export class RssModule {}

@@ -2,8 +2,7 @@
 
 radioadblock backend
 
-`docker build . -t adblock-server`
-`docker run --rm -it --entrypoint bash adblock-server`
+`docker build . -t adblock-server && docker run --rm -it --entrypoint bash adblock-server`
 
 Note: This does not actually work - the models are all empty
 
