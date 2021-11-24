@@ -1,29 +1,18 @@
-import { Controller, Get, UseGuards } from '@nestjs/common';
+import { Param, Controller, Get, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
+
+import {PodcastService} from '../podcast/podcast.service'
 
 @Controller()
 export class AppController {
-  @Get()
-  getHello(): string {
-    return 'Hello World!';
-  }
+  constructor(private podcastService: PodcastService) {}
 
-  @Get('/feed')
+  // Unescaped urls in path seem to throw 404 regardless of middleware or interceptors
+  // For now, we will route inside the controller. Later we can use nginx to rewrite the url if required
+  @Get('*')
   @UseGuards(AuthGuard('basic'))
-  posts() {
-    // TODO: according to args, return the exact same feed, but with a different link in enclosures
-    // The link should be lazy - on get request, download and run through the adblocker (and cache) before returning
-
-    return [
-      {
-        title: 'Post One',
-        authorName: 'Sirwan',
-        content: 'This is a sample content',
-        categories: ['JS', 'React'],
-        url: '',
-        lastUpdatedTime: new Date(),
-        publishDate: new Date(),
-      },
-    ];
+  async root(@Param() params: {'0': string}): Promise<string> {
+    const result = await this.podcastService.handle(params['0'])
+    return result;
   }
 }

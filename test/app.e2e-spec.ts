@@ -20,22 +20,15 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  it('/ (GET)', () => {
-    return request(app.getHttpServer())
-      .get('/')
-      .expect(200)
-      .expect('Hello World!');
-  });
-
   it('/feed (GET)', () => {
     return request(app.getHttpServer())
-      .get('/feed')
+      .get('/https://example.com')
       .expect(401)
   });
 
   it('/feed (GET) authed', () => {
     return request(app.getHttpServer())
-      .get('/feed')
+    .get('/https://example.com')
       .auth(config.get('HTTP_BASIC_USER'), config.get('HTTP_BASIC_PASS'))
       .expect(200)
   });

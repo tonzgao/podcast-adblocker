@@ -8,9 +8,10 @@ For now, I'll just implement this conceptually and if I get around to playing ar
 1. Setup rss client using something like https://www.npmjs.com/package/rss-parser - works
 2. See if https://github.com/adblockradio/adblockradio works off the shelf - does not work
 3. Reserve using something like https://www.npmjs.com/package/rss-generator or just vanilla https://www.npmjs.com/package/xml-js library
-4. Add endpoints/frontend to proxy feeds
+4. Add endpoints/frontend to proxy feeds - done
 5. Add endpoints to serve and cache adblocked files
 6. Add cronjob to delete old files
+7. Add db for "subscribed" feeds and cronjob to prefetch new episodes
 7. Add basic auth - done
 
 <p align="center">
