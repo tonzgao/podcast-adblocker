@@ -22,13 +22,13 @@ describe('AppController (e2e)', () => {
 
   it('/feed (GET)', () => {
     return request(app.getHttpServer())
-      .get('/https://example.com')
+    .get('/feed/https://feeds.npr.org/510289/podcast.xml')
       .expect(401)
   });
 
   it('/feed (GET) authed', () => {
     return request(app.getHttpServer())
-    .get('/https://example.com')
+    .get('/feed/https://feeds.npr.org/510289/podcast.xml')
       .auth(config.get('HTTP_BASIC_USER'), config.get('HTTP_BASIC_PASS'))
       .expect(200)
   });

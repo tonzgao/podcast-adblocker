@@ -1,13 +1,17 @@
 import { Injectable } from '@nestjs/common';
 
 import {RssService} from './rss.service'
+import {EpisodeService} from './episode.service'
 
 @Injectable()
 export class PodcastService {
-  constructor(private rssService: RssService) {}
+  constructor(private rssService: RssService, private episodeService: EpisodeService) {}
 
-  public async handle(url: string) {
-    // TODO: if domain is same as configService.get('HOSTNAME'), return adblocked asset
-    return this.rssService.proxyUrl(url);
+  public async handle(input: string) {
+    if (input.startsWith('feed')) {
+      return this.rssService.proxyUrl(input.replace('feed/', ''));
+    } else if (input.startsWith('download')) {
+      return this.episodeService.handle(input.replace('download/', ''));
+    }
   }
 }

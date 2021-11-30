@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RssService root should replace rss feed urls 1`] = `
+"<items>
+    <title>Top 10 myths about caring for a zebra</title>
+    <pubDate>Tue, 14 Mar 2017 12:00:00 GMT</pubDate>
+    <enclosure>
+        <url>http://localhost:3000/download/https://www.example.com/podcasts/dafnas-zebras/audio/toptenmyths.mp3</url>
+        <type>audio/mpeg</type>
+        <length>34216300</length>
+    </enclosure>
+    <content>Here are the top 10 misunderstandings about the care, feeding, and breeding of these lovable striped animals.</content>
+    <contentSnippet>Here are the top 10 misunderstandings about the care, feeding, and breeding of these lovable striped animals.</contentSnippet>
+    <guid>dzpodtop10</guid>
+    <isoDate>2017-03-14T12:00:00.000Z</isoDate>
+    <itunes>
+        <duration>30:00</duration>
+    </itunes>
+</items>
+<items>
+    <title>Keeping those stripes neat and clean</title>
+    <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+    <enclosure>
+        <url>http://localhost:3000/download/https://www.example.com/podcasts/dafnas-zebras/audio/cleanstripes.mp3</url>
+        <type>audio/mpeg</type>
+        <length>26004388</length>
+    </enclosure>
+    <content>Keeping your zebra clean is time consuming, but worth the effort.</content>
+    <contentSnippet>Keeping your zebra clean is time consuming, but worth the effort.</contentSnippet>
+    <guid>dzpodclean</guid>
+    <isoDate>2017-02-24T12:00:00.000Z</isoDate>
+    <itunes>
+        <duration>22:48</duration>
+    </itunes>
+</items>
+<title>Dafna's Zebra Podcast</title>
+<description>A pet-owner's guide to the popular striped equine.</description>
+<link>https://www.example.com/podcasts/dafnas-zebras/</link>
+<language>en-us</language>
+<itunes>
+    <owner>
+        <email>dafna@example.com</email>
+    </owner>
+    <image>https://www.example.com/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg</image>
+    <author>Dafna</author>
+</itunes>"
+`;
