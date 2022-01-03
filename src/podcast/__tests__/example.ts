@@ -30,6 +30,6 @@ const example = `<?xml version="1.0" encoding="UTF-8"?>
       <guid>dzpodclean</guid>
     </item>
   </channel>
-</rss>`
+</rss>`;
 
 export default example;

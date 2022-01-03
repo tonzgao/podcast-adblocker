@@ -5,7 +5,11 @@ import { AppController } from './controller/app.controller';
 import { PodcastModule } from './podcast/podcast.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({isGlobal: true}), AuthModule, PodcastModule],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    AuthModule,
+    PodcastModule,
+  ],
   controllers: [AppController],
   providers: [],
 })
