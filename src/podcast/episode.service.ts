@@ -35,8 +35,7 @@ export class EpisodeService {
     // TODO: only serve via nginx
     const file = fs.createReadStream(filename);
     res.set({
-      'Content-Type': 'audio/mpeg',
-      'Cache-Control': 'max-age=604800',
+      'Content-Type': 'audio/mpeg', // TODO: is this guaranteed to be correct?
     });
     return new StreamableFile(file);
   }

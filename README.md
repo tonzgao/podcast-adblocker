@@ -12,7 +12,8 @@ For now, I'll just implement this conceptually and if I get around to playing ar
 5. Add endpoints to serve and cache adblocked files - done
 6. Add cronjob to delete old files
 7. Add db for "subscribed" feeds and cronjob to prefetch new episodes
-7. Add basic auth - done
+8. Add basic auth - done
+9. Dockerize
 
 ## Installation
 
