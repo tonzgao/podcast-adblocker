@@ -15,6 +15,12 @@ For now, I'll just implement this conceptually and if I get around to playing ar
 8. Add basic auth - done
 9. Dockerize
 
+## The new plan
+1. Train model myself using audio pulled from youtube + sponsorblock
+* https://huggingface.co/docs/transformers/main/en/tasks/audio_classification
+* https://wiki.sponsor.ajay.app/w/API_Docs
+2. Plug in existing work or just start over
+
 ## Installation
 
 ```bash
